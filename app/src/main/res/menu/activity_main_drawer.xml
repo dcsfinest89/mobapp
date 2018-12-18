@@ -15,5 +15,5 @@
         <item android:title="placeholder"
             android:icon="@drawable/ic_menu_manage"
             android:id="@+id/nav_placeholder"/>
-    </>
+    </group>
 </menu>
