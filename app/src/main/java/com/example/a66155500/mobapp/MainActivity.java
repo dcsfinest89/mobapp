@@ -84,8 +84,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_placeholder) {
 
         } else if (id == R.id.nav_persistentstorage){
-            Intent intent = new Intent(this, PersistentStorage.class);
-            startActivity(intent);
+            Intent intentPS = new Intent(this, PersistentStorage.class);
+            startActivity(intentPS);
+    else if (id == R.id.nav_sensor_list) {
+            Intent intentSL = new Intent(this, sensorList.class);
+            startActivity(intentSL);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
