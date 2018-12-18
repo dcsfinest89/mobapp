@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_persistentstorage){
             Intent intentPS = new Intent(this, PersistentStorage.class);
-            startActivity(intentPS);
+            startActivity(intentPS);}
     else if (id == R.id.nav_sensor_list) {
             Intent intentSL = new Intent(this, sensorList.class);
             startActivity(intentSL);
