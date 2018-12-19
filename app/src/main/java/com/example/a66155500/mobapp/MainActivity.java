@@ -90,6 +90,10 @@ public class MainActivity extends AppCompatActivity
             Intent intentSL = new Intent(this, sensorList.class);
             startActivity(intentSL);
         }
+        else if (id == R.id.nav_contacs) {
+            Intent intentSL = new Intent(this, sensorList.class);
+            startActivity(intentSL);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
