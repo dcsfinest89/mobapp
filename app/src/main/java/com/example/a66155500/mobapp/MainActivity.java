@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intentSL);
         }
         else if (id == R.id.nav_contacs) {
-            Intent intentSL = new Intent(this, sensorList.class);
-            startActivity(intentSL);
+            Intent intentC = new Intent(this, Contacts.class);
+            startActivity(intentC);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
