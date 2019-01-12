@@ -29,7 +29,7 @@ public class webView extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                wv.loadUrl("file:///android_asset/Magic8Ball.html");
+                wv.loadUrl("file:///android_assets/Magic8Ball.html");
                 btn.setVisibility(View.INVISIBLE);
                 /*String htmlString =
                 "<html><body><h1>Magic!</h1><img src='magic8_gray.png'/></body></html>";
