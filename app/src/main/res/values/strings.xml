@@ -13,4 +13,5 @@
     <string name="title_activity_persistente_speicherung">PersistenteSpeicherung</string>
     <string name="nav_sensor_list">Sensoren Liste</string>
     <string name="nav_WebView">Magic 8 Ball</string>
+    <string name="web_view_button">Starte die App hier!</string>
 </resources>

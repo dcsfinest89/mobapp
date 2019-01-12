@@ -15,7 +15,7 @@ public class webView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
 
-        Button btn = (Button) findViewById(R.id.web_view_button);
+        final Button btn = (Button) findViewById(R.id.web_view_button);
         final WebView wv = (WebView) findViewById(R.id.web_view);
 
         wv.setWebViewClient(new WebViewClient(){
@@ -29,15 +29,16 @@ public class webView extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                wv.loadUrl("https://www.google.de/");
-                //String htmlString =
-                //"<html><body><h1>Magic!</h1><img src='magic8.png'/></body></html>";
-                //wv.loadDataWithBaseURL("file:///android_res/drawable/",
-                //htmlString,    // Data-String
-                //"text/html",   // Mime-Type
-                //null,          // Encoding, Standard UTF-8
-                //null           // History URL
-                //);
+                wv.loadUrl("file:///android_asset/Magic8Ball.html");
+                btn.setVisibility(View.INVISIBLE);
+                /*String htmlString =
+                "<html><body><h1>Magic!</h1><img src='magic8_gray.png'/></body></html>";
+                wv.loadDataWithBaseURL("file:///android_asset/",
+                        htmlString,    // Data-String
+                "text/html",   // Mime-Type
+                null,          // Encoding, Standard UTF-8
+                null           // History URL
+                );*/
             }
         });
 
