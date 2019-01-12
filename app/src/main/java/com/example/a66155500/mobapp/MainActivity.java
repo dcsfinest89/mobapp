@@ -2,6 +2,7 @@ package com.example.a66155500.mobapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -83,12 +84,18 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_placeholder) {
 
-        } else if (id == R.id.nav_persistentstorage){
+        } else if (id == R.id.nav_persistentstorage) {
             Intent intentPS = new Intent(this, PersistentStorage.class);
-            startActivity(intentPS);}
-    else if (id == R.id.nav_sensor_list) {
+            startActivity(intentPS);
+        } else if (id == R.id.nav_sensor_list) {
             Intent intentSL = new Intent(this, sensorList.class);
             startActivity(intentSL);
+        }
+        else if (id == R.id.nav_contacts) {
+            Intent intent = new Intent(Intent.ACTION_DEFAULT, ContactsContract.Contacts.CONTENT_URI);
+            startActivityForResult(intent, 1);
+            //Intent intentSL = new Intent(this, contacts.class);
+            //startActivity(intentSL);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -12,6 +12,9 @@
             android:id="@+id/nav_persistentstorage"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/persistentstorage" />
+        <item android:title="Kontakte"
+            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/nav_contacts"/>
         <item android:title="placeholder"
             android:icon="@drawable/ic_menu_manage"
             android:id="@+id/nav_placeholder"/>
