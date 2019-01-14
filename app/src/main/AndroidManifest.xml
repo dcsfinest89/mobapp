@@ -30,15 +30,15 @@
                 android:value=".sensorList" />
         </activity>
         <activity android:name=".PersistentStorage">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".PersistentStorage" />
-        <activity android:name=".sensorList" />
-        <activity android:name=".sensor_list_detail" />
-        <activity android:name=".Contacts"></activity>
+        <activity android:name=".Contacts">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
