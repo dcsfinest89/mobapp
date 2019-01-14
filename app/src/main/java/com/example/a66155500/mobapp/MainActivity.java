@@ -87,9 +87,12 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_persistentstorage){
             Intent intent = new Intent(this, PersistentStorage.class);
             startActivity(intent);
-        }else if (id == R.id.nav_contacs){
+        }else if (id == R.id.nav_contacts){
             Intent intent = new Intent(this, Contacts.class);
             startActivity(intent);
+    }else if (id == R.id.nav_WebView){
+        Intent intent = new Intent(this, webView.class);
+        startActivity(intent);
     }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

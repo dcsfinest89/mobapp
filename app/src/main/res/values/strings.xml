@@ -13,5 +13,6 @@
     <string name="input">Input</string>
     <string name="title_activity_persistente_speicherung">PersistenteSpeicherung</string>
     <string name="nav_contacts">Contacts</string>
-
+    <string name="nav_WebView">Magic 8 Ball</string>
+    <string name="web_view_button">Starte die App hier!</string>
 </resources>
