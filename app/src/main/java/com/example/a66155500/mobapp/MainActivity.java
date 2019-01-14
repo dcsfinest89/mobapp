@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity
     }else if (id == R.id.nav_WebView){
         Intent intent = new Intent(this, webView.class);
         startActivity(intent);
+    }else if (id == R.id.nav_bilderwechsel){
+        Intent intent = new Intent(this, bilderWechsel.class);
+        startActivity(intent);
     }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

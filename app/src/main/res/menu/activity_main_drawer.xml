@@ -19,5 +19,9 @@
             android:id="@+id/nav_WebView"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="@string/nav_WebView" />
+        <item
+            android:id="@+id/nav_bilderwechsel"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_bilderwechsel" />
     </group>
 </menu>
