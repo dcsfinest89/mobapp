@@ -24,6 +24,17 @@ public class sensor_list_detail extends AppCompatActivity implements SensorEvent
         TextView sensorName = (TextView) findViewById(R.id.sensorNameValue);
         TextView sensorVendor = (TextView) findViewById(R.id.sensorVendorValue);
         TextView sensorPressure = (TextView) findViewById(R.id.sensorPressureValue);
+        TextView sensorAcceleration = (TextView) findViewById(R.id.sensorAccelerationValue);
+
+        TextView sensorNameShow = (TextView) findViewById(R.id.sensorName);
+        TextView sensorVendorShow = (TextView) findViewById(R.id.sensorVendor);
+        TextView sensorPressureShow = (TextView) findViewById(R.id.sensorPressure);
+        TextView sensorAccelerationShow = (TextView) findViewById(R.id.sensorAcceleration);
+
+        sensorNameShow.setText("Sensor-Name: ");
+        sensorVendorShow.setText("Sensor-Hersteller: ");
+        sensorPressureShow.setText("Luftdruck: ");
+        sensorAccelerationShow.setText("Geschwindigkeit: ");
 
         manager = (SensorManager)this.getSystemService(SENSOR_SERVICE);
         //mPressure = manager.getDefaultSensor(Sensor.TYPE_PRESSURE);
@@ -56,17 +67,18 @@ public class sensor_list_detail extends AppCompatActivity implements SensorEvent
             float millibarsOfPressure = event.values[0];
             //Log.i(TAG, "onSensorChanged() Pressure = " + millibarsOfPressure + " hPa"); TextView tv = (TextView) findViewById(R.id.sensorPressureValue);
             tvPressure.setText("" + millibarsOfPressure + " hPa");
+            tvAcceleration.setText("Keine Daten.");
         }else if(mySensor.getType() == mySensor.TYPE_ACCELEROMETER){
             float metersPerSecondX = event.values[0];
             float metersPerSecondY = event.values[1];
             float metersPerSecondZ = event.values[2];
             float metersPerSecond = metersPerSecondX + metersPerSecondY + metersPerSecondZ;
             tvAcceleration.setText("" + metersPerSecond + " m/s");
-            tvPressure.setText("Keine Daten für diesen Sensor.");
+            tvPressure.setText("Keine Daten.");
         }
         else{
-            tvPressure.setText("Keine Daten für diesen Sensor.");
-            tvAcceleration.setText("Keine Daten für diesen Sensor.");
+            tvPressure.setText("Keine Daten.");
+            tvAcceleration.setText("Keine Daten.");
         }
     }
     @Override
