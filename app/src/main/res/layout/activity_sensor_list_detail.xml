@@ -7,12 +7,83 @@
     tools:context=".sensor_list_detail">
 
     <TextView
-        android:id="@+id/sensortitle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/sensorName"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="49dp"
+        android:text="Sensor Name:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sensorVendor"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor Vendor:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorName" />
+
+    <TextView
+        android:id="@+id/sensorPressure"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor Pressure:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorVendor" />
+
+    <TextView
+        android:id="@+id/sensorAcceleration"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="sensorAcceleration:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorPressure" />
+
+    <TextView
+        android:id="@+id/sensorPressureValue"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor Pressure"
+        app:layout_constraintStart_toEndOf="@+id/sensorPressure"
+        app:layout_constraintTop_toBottomOf="@+id/sensorVendorValue" />
+
+    <TextView
+        android:id="@+id/sensorAccelerationValue"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="sensorAcceleration"
+        app:layout_constraintStart_toEndOf="@+id/sensorAcceleration"
+        app:layout_constraintTop_toBottomOf="@+id/sensorPressureValue" />
+
+    <TextView
+        android:id="@+id/sensorVendorValue"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor Vendor"
+        app:layout_constraintStart_toEndOf="@+id/sensorVendor"
+        app:layout_constraintTop_toBottomOf="@+id/sensorNameValue" />
+
+    <TextView
+        android:id="@+id/sensorNameValue"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="49dp"
+        android:text="Sensor Name"
+        app:layout_constraintStart_toEndOf="@+id/sensorName"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
