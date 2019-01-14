@@ -8,5 +8,17 @@
             android:id="@+id/nav_sensor_list"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/nav_sensor_list" />
+    <group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_persistentstorage"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/persistentstorage" />
+        <item android:title="placeholder"
+            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/nav_placeholder"/>
     </group>
+
 </menu>

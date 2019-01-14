@@ -21,6 +21,7 @@
         </activity>
         <activity android:name=".sensorList" />
         <activity android:name=".sensor_list_detail"></activity>
+        <activity android:name=".PersistentStorage" />
     </application>
 
 </manifest>
