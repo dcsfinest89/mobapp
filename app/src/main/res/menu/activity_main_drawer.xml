@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -15,6 +14,10 @@
         android:title="@string/persistentstorage" />
         <item android:title="@string/nav_contacts"
             android:icon="@drawable/ic_menu_manage"
-            android:id="@+id/nav_contacs"/>
+            android:id="@+id/nav_placeholder"/>
+        <item
+            android:id="@+id/nav_WebView"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="@string/nav_WebView" />
     </group>
 </menu>
