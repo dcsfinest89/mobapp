@@ -19,9 +19,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sensorList" />
-        <activity android:name=".sensor_list_detail"></activity>
-        <activity android:name=".PersistentStorage" />
+        <activity android:name=".sensorList">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".sensor_list_detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".sensorList" />
+        </activity>
+        <activity android:name=".PersistentStorage">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

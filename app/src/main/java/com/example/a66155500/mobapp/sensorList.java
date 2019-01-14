@@ -1,6 +1,5 @@
 package com.example.a66155500.mobapp;
 
-import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
