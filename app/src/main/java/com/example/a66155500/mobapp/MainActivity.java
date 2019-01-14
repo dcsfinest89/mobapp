@@ -82,10 +82,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
     if (id == R.id.nav_sensor_list) {
-            Intent intent = new Intent(this, sensorList.class);
-            startActivity(intent);
-        if (id == R.id.nav_placeholder) {
-
+        Intent intent = new Intent(this, sensorList.class);
+        startActivity(intent);
         } else if (id == R.id.nav_persistentstorage){
             Intent intent = new Intent(this, PersistentStorage.class);
             startActivity(intent);
