@@ -7,9 +7,10 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class Contacts extends Activity {
+public class Contacts extends AppCompatActivity {
 
     private static final int
             PERMISSIONS_REQUEST_READ_CONTACTS = 123;
