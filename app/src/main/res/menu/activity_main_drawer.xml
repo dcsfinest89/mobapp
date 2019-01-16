@@ -4,16 +4,25 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_sensor_list"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/nav_sensor_list" />
+    <item
+        android:id="@+id/nav_sensor_list"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/nav_sensor_list" />
         <item
             android:id="@+id/nav_persistentstorage"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@android:drawable/ic_menu_save"
             android:title="@string/persistentstorage" />
-        <item android:title="placeholder"
-            android:icon="@drawable/ic_menu_manage"
-            android:id="@+id/nav_placeholder"/>
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@android:drawable/sym_contact_card"
+            android:title="@string/nav_contacts" />
+        <item
+            android:id="@+id/nav_WebView"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="@string/nav_WebView" />
+        <item
+            android:id="@+id/nav_bilderwechsel"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_bilderwechsel" />
     </group>
 </menu>

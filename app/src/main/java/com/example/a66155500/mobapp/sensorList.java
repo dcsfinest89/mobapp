@@ -1,6 +1,5 @@
 package com.example.a66155500.mobapp;
 
-import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
@@ -48,8 +47,9 @@ public class sensorList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapter, View v, int position, long id ) {
                 Intent sensorDetails = new Intent(sensorList.this, sensor_list_detail.class);
-                sensorDetails.putExtra("SENSOR_NAME", sensorList.get(position).getName()); //pass sensor name to detail activity
-                sensorDetails.putExtra("SENSOR_VENDOR", sensorList.get(position).getVendor());
+                //sensorDetails.putExtra("SENSOR_NAME", sensorList.get(position).getName()); //pass sensor name to detail activity
+                //sensorDetails.putExtra("SENSOR_VENDOR", sensorList.get(position).getVendor()); // pass vendor name to detail activity
+                sensorDetails.putExtra("SENSOR_TYPE", sensorList.get(position).getType());
                 startActivity(sensorDetails);
             }
         });

@@ -81,15 +81,22 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_placeholder) {
-
+    if (id == R.id.nav_sensor_list) {
+            Intent intent = new Intent(this, sensorList.class);
+            startActivity(intent);
         } else if (id == R.id.nav_persistentstorage){
-            Intent intentPS = new Intent(this, PersistentStorage.class);
-            startActivity(intentPS);}
-    else if (id == R.id.nav_sensor_list) {
-            Intent intentSL = new Intent(this, sensorList.class);
-            startActivity(intentSL);
-        }
+            Intent intent = new Intent(this, PersistentStorage.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_contacts){
+            Intent intent = new Intent(this, Contacts.class);
+            startActivity(intent);
+    }else if (id == R.id.nav_WebView){
+        Intent intent = new Intent(this, webView.class);
+        startActivity(intent);
+    }else if (id == R.id.nav_bilderwechsel){
+        Intent intent = new Intent(this, bilderWechsel.class);
+        startActivity(intent);
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
